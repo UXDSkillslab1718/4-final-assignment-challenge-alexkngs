@@ -112,14 +112,22 @@
             <h2>PROJECTS</h2>
 
             <!-- PROJECT details -->
-            <h3>NUMBER 1 </h3>
-            <p>DESCRIPTION</p>
+            
+            <!--
+        <img src="images/coffeehouse.png"  alt="coffe house" id="ch">
+        <img src="images/bios.png"  alt="interaction design" id="bios">
+        <img src="images/pokemon.png"  alt="iux" id="pokemon">
+-->
+        <img src="images/coffeehouse.png" id="id" style="cursor: pointer;"
+  onclick="document.getElementById('bios').style.display='block'">
 
-            <h3>NUMBER 2 </h3>
-            <p>DESCRIPTION</p>
+  <div id="ch" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="images/CH.png" style="width:100%">
+    </div>
+  </div>
 
-            <h3>NUMBER 3 </h3>
-            <p>DESCRIPTION</p>
 
             <!-- End of project details. -->
         </div>

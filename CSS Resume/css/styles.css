@@ -216,6 +216,20 @@ p + h3{
 	margin-top: 30px;
 }
 
+#ch{
+	position: relative;
+	float:left;
+}
+
+#bios{
+	position:relative;
+}
+
+#pokemon{
+	position: relative;
+	float: right;
+}
+
 /* showcase
 -----------------------*/
 .showcase {
