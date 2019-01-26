@@ -1,21 +1,6 @@
 /*color palette
-#282D42 - dark blue
-#8D99AE - light blue
-#EDF2F4 - blue/white
-#EF233C - red
-
-
-#F16D24 - orange
-#545554 - gray
-#2e2f30 - dark grey
-#072E40 - dark blue
-#0C3D54 - gray blue
-#DAE9F2 - light blue
-#EDF2F4 - blue white
-
 white - white
 #303030 - dark grey
-#7FDDD8 - blue
 #DD4A4A - red
 
 */
@@ -74,7 +59,7 @@ text-decoration: none;
 }
 
 main h2{
-	color:#7FDDD8;
+	color:#DD4A4A;
 }
 
 main p, main h1, main h3 {
@@ -215,6 +200,10 @@ p + h3{
 -----------------------*/
 .intro {
 background: #303030;
+}
+
+.skills{
+	margin: 0 5px;
 }
 
 /* projects
