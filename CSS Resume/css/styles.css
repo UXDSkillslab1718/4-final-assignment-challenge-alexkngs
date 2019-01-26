@@ -159,13 +159,15 @@ footer {
 	text-align: center;
 }
 
+footer a {
+	color:#DD4A4A;
+}
+
 .contact-info a {
 	
 	padding: 40px;
 	display: inline-block;
 }
-
-
 
 
 /* Work
