@@ -46,7 +46,7 @@ h3 {
 }
 
 a{
-	color: #ffffff;
+	color: white;
 }
 
 a: hover{
@@ -74,7 +74,7 @@ text-decoration: none;
 }
 
 main p, main h1, main h2, main h3 {
-color:#ffffff;
+color:white;
 }
 
 .uppercase {
@@ -86,6 +86,7 @@ color:#ffffff;
 	background: #DD4A4A;
 	color:white;
 	padding:10px;
+	display: inline-block;
 }
 
 /* Navigation
@@ -130,13 +131,12 @@ header{
 	background: #303030;
 }
 
-/*
+
 .download {
 	position: absolute;
 	bottom: 0;
 	right:0;
 }
-*/
 
 header h1, header h2 {
 	text-align:left;
@@ -188,8 +188,28 @@ p + h3{
 	margin-top: 30px;
 }
 
-/* Languages
+/* intro
 -----------------------*/
-.languages {
+.intro {
 background: #303030;
+}
+
+/* projects
+-----------------------*/
+.projects {
+background: #303030;
+}
+
+p + h3{
+	margin-top: 30px;
+}
+
+/* showcase
+-----------------------*/
+.showcase {
+background: #303030;
+}
+
+p + h3{
+	margin-top: 30px;
 }
