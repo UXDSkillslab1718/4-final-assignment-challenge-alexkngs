@@ -84,9 +84,8 @@ color:#282D42;
 /* Navigation
 -----------------------*/
 nav {
-	text-align: center;
-	background:white;
-	position:fixed ;
+	text-align: right;
+	position:absolute;
 	top:0;
 	width: 100%;
 }
@@ -97,6 +96,20 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight:bold;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 2px solid white;
 }
 
 /* Header and Footer
