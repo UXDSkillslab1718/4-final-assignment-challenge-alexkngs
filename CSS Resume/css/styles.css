@@ -15,7 +15,7 @@
 
 white - white
 #303030 - dark grey
-#7FDDD8 - blue (dont need anymore)
+#7FDDD8 - blue
 #DD4A4A - red
 
 */
@@ -39,7 +39,6 @@ h2 {
 	font-size: 20px;
 	margin-top:0;
 	padding-top: 0;
-	text-align: left;
 }
 
 h3 {
@@ -75,7 +74,7 @@ text-decoration: none;
 }
 
 main h2{
-	color:#DD4A4A;
+	color:#7FDDD8;
 }
 
 main p, main h1, main h3 {
@@ -92,22 +91,6 @@ color:white;
 	color:white;
 	display: inline-block;
 }
-
-th.rotate{
-	 
-		transform:
-		translate(25px,51px)
-		rotate(270deg);
-		width:30px;
-		white-space: nowrap;
-
-}
-
-.anyname{
-	margin:auto 0;
-}
-
-
 
 /* Navigation
 -----------------------*/
