@@ -73,7 +73,11 @@ text-decoration: none;
 	min-height:175px;
 }
 
-main p, main h1, main h2, main h3 {
+main h2{
+	color:#62B7B7;
+}
+
+main p, main h1, main h3 {
 color:white;
 }
 
