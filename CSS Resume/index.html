@@ -11,11 +11,11 @@
 <body>
     <!-- // Basics -->
     <header>
-        <a href="resume.pdf" class="btn download" download>download pdf</a>
+        
     <nav>
-    <p style="text-align: left; color: #DD4A4A; padding: 25px 20px; position: absolute;font-weight:bold; margin:0;"> DOWNLOAD PDF</p>
-            <div class="nav-items"
-                <h2><a href="#intro"> Intro </a></h2>
+        <a href="resume.pdf" class="btn download" download>download cv</a>
+            <div class="nav-items">
+                <a href="#intro"> Intro </a>
                 <a href="#experience"> Work </a>
                 <a href="#edu"> Education </a>
                 <a href="#proj"> Projects </a>
@@ -28,8 +28,8 @@
     </nav>
     <div class="content-wrap">
         <img src="images/face.png"  alt="face outline" id="faceimage">
-        <h1 style="padding-top:110px;">HELLO.</h1>
-        <h1>MY NAME IS ALEX</h1>
+        <h1 style="padding-top:110px;">HELLO,</h1>
+        <h1>MY NAME IS <span style="color:#7FDDD8;"> ALEX. </span></h1>
     </div>
     
     </header>
@@ -46,7 +46,9 @@
                 <p>I am a UX design student at The Hague University.</p>
 
                 <h3>Skills</h3>
-                <p>AI PS UX</p>
+                <img src="images/ai.png"  alt="ai">
+                <img src="images/ps.png"  alt="ps">
+                <img src="images/ux.png"  alt="ux">
 
             <!-- End of intro. -->
             </div>
@@ -113,24 +115,42 @@
 
             <!-- PROJECT details -->
             
-            <!--
-        <img src="images/coffeehouse.png"  alt="coffe house" id="ch">
-        <img src="images/bios.png"  alt="interaction design" id="bios">
-        <img src="images/pokemon.png"  alt="iux" id="pokemon">
--->
-        <img src="images/coffeehouse.png" id="id" style="cursor: pointer;"
-  onclick="document.getElementById('bios').style.display='block'">
+        <main class="grid">
+        <img src="images/coffeehouse.png"  alt="coffe house" onclick="openPhoto(this.id)" id="ch">
+        <img src="images/bios.png"  alt="interaction design" onclick="openPhoto(this.id)" id="id">
+        <img src="images/pokemon.png"  alt="iux" onclick="openPhoto(this.id)" id="iux">
+        </main>
 
-  <div id="ch" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="images/CH.png" style="width:100%">
-    </div>
-  </div>
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var modalImg = document.getElementById("img01");
+        function openPhoto(id){
+            modal.style.display = "block";
+            modalImg.src = "images/" + id + ".png";
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("modal")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+        </script>
+
+
 
 
             <!-- End of project details. -->
         </div>
+        
         </section>
 
          <!-- // Showcase -->
