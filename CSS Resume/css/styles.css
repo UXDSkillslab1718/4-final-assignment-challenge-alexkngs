@@ -7,10 +7,17 @@
 
 #F16D24 - orange
 #545554 - gray
+#2e2f30 - dark grey
 #072E40 - dark blue
 #0C3D54 - gray blue
 #DAE9F2 - light blue
 #EDF2F4 - blue white
+
+white - white
+#303030 - dark grey
+#62B7B7 - blue
+#DD4A4A - red
+
 */
 
 /* Global styles
@@ -21,16 +28,17 @@ body {
 }
 
 h1, h2 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight:400;
 }
 h1{
-	font-size: 80px;
+	font-size: 40px;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 20px;
 	margin-top:0;
+	padding-top: 0;
 }
 
 h3 {
@@ -38,7 +46,7 @@ h3 {
 }
 
 a{
-	color: #F16D24;
+	color: #ffffff;
 }
 
 a: hover{
@@ -66,7 +74,7 @@ text-decoration: none;
 }
 
 main p, main h1, main h2, main h3 {
-color:#282D42;
+color:#ffffff;
 }
 
 .uppercase {
@@ -75,10 +83,9 @@ color:#282D42;
 
 .btn {
 	text-decoration: none;
-	background: #F16D24;
+	background: #DD4A4A;
 	color:white;
 	padding:10px;
-	display: inline-block;
 }
 
 /* Navigation
@@ -86,21 +93,19 @@ color:#282D42;
 nav {
 	text-align: right;
 	position:absolute;
+	background: #303030;
 	top:0;
 	width: 100%;
 }
 
 nav a {
-	padding: 2px 20px;
+	padding: 25px 20px;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight:bold;
-}
-
-nav a {
-  position: relative;
-  text-decoration: none;
+  	position: relative;
+  	text-decoration: none;
 }
 
 a:hover::after {
@@ -115,38 +120,34 @@ a:hover::after {
 /* Header and Footer
 -----------------------*/
 header, footer {
-	background: #0C3D54;
-	color: #EDF2F4;
+	background: #303030;
+	color: white;
 }
 /* header */
 header{
-	padding-top: 100px;
+	padding-top: 250px;
 	position: relative;
-	background: linear-gradient(rgba(12,61,84,0.8),rgba(12,61,84,0.5)),
-					url(../images/bg.jpg) no-repeat;
+	background: #303030;
 }
 
-.profile-img {
-	width:300px;
-	border-radius: 50%;
-	float: left;
-	margin-right: 30px;
-}
-
+/*
 .download {
 	position: absolute;
 	bottom: 0;
 	right:0;
 }
+*/
 
 header h1, header h2 {
+	text-align:left;
 	color:#EDF2F4
 	margin: 0;
 
 }
 
 header h1 {
-	padding-bottom: 0;
+	padding-bottom: none;
+	margin-bottom:0;
 }
 
 /* footer */
@@ -166,7 +167,7 @@ footer {
 /* Work
 -----------------------*/
 .work {
-background: #EDF2F4;
+background: #303030;
 }
 
 h3 ~ p {
@@ -180,7 +181,7 @@ h3 ~ p {
 /* Education
 -----------------------*/
 .education {
-background: #DAE9F2;
+background: #303030;
 }
 
 p + h3{
@@ -190,5 +191,5 @@ p + h3{
 /* Languages
 -----------------------*/
 .languages {
-background: #EDF2F4;
+background: #303030;
 }
