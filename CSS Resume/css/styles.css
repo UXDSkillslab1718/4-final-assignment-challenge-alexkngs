@@ -258,3 +258,10 @@ background: #303030;
 p + h3{
 	margin-top: 30px;
 }
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
